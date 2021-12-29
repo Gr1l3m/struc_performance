@@ -9,7 +9,7 @@ float spectrum_point(float, float, float, float, float, float, float, float, flo
 
 int main()
 {
-	cout << spectrum_point(1.f, 0.66, 1.f, 1.43, 1.f, 1.f, 0.89, 1.f, 1.f, 3.48) << endl;
+	cout << spectrum_point(1.f, 0.66f, 1.f, 1.43f, 1.f, 1.f, 0.89f, 1.f, 1.f, 3.48f) << endl;
 
 }
 
@@ -41,5 +41,5 @@ float spectrum_point(float t, float kd, float beta_d, float scr, float fa, float
         sa = (s1d / pow(t, 2)) * tl;
     }
 
-	return sa;
+	return sa / beta_d;
 }
